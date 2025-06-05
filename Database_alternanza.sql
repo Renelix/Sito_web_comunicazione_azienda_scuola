@@ -42,15 +42,15 @@ CREATE TABLE `anagrafica_studenti` (
 --
 
 CREATE TABLE `azienda_richieste` (
-  `Id_azienda_richieste` int(11) NOT NULL,
+  `Id_azienda_richiesta` int(11) NOT NULL,
   `Descrizione` longtext NOT NULL,
   `N_studenti` int(11) NOT NULL,
   `Specializzazione_studenti` longtext NOT NULL,
   `Data_inizio_attivita` date NOT NULL,
-  `Data_fine_attivivta` date NOT NULL,
-  `Url_contratto` longtext NOT NULL,
+  `Data_fine_attivita` date NOT NULL,
+  `Url_contratto` longtext DEFAULT NULL,
   `Cod_azienda` int(11) NOT NULL,
-  `Cod_tutor` int(11) NOT NULL
+  `Cod_tutor` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
